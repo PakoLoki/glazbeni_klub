@@ -1,0 +1,32 @@
+.Naslov{
+    font-size:18px;
+    text-align: center;
+    color: bisque;
+}
+.vodoravno div {
+	display: inline-block;
+}
+.skriveno {
+	display: none;
+}
+.form_error {
+	color: #ff0000;
+	position: relative;
+}
+.form_error::after {
+	content: " *";
+	position: absolute;
+	right: -3px;
+	top: 0;
+}
+@media only print{
+    header,nav,footer{display: none;}
+
+    th{
+        color: black;
+    }
+
+    .Naslov{
+        color: black;
+    }
+}
